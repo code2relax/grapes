@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script>
+          websocket = new WebSocket("wss://127.0.0.1:1979/test");
+    websocket.onopen = function(evt) { alert('test1') };
+   // websocket.onclose = function(evt) { alert('test 2') };
+    websocket.onmessage = function(evt) { alert('test 3') };
+    websocket.onmessage = function(evt) { alert('test 4') };
+    websocket.onerror = function(evt) {alert('test 5'+evt)};
+  
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
