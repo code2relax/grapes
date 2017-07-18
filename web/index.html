@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="icon" href="../../favicon.ico"-->
+
+    <title>Grapes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+    
+    <script type='text/javascript' src='http://knockoutjs.com/downloads/knockout-3.0.0rc.js'></script>
+    
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse header navbar-fixed-top">
+      <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div  class="navbar-toggle custom-toggle collapsed" data-toggle="collapse" aria-expanded="false">                
+      
+          <input type="text" class="form-control" placeholder="Search">
+                   
+      </div>
+      <a class="navbar-brand hidden-xs " href="#">Grapes</a>
+      <button type="button" class=" user-icon-toggle visible-xs  btn-default btn-md ">
+        <span class="  glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">     
+     
+      <ul class="nav navbar-nav navbar-right">
+         <form class="navbar-form navbar-left">
+        
+          <input type="text" class="form-control" placeholder="Search">
+       
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+        <!--<li><a href="#">Link</a></li>
+        <li class="dropdown">
+         
+        </li>-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar ">
+           <div >
+           <ul id ="navbar"  class="nav nav-sidebar navbar-collapse collapse">
+            <li class="active"><a href="#">User 1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">User 2</a></li>
+            <li><a href="#">User 2</a></li>
+            <li><a href="#">User 2</a></li>
+            <li><a href="#">User 2</a></li>
+            <li><a href="#">User 2</a></li>
+        
+            <li><a href="#">User 2</a></li>
+            <li><a href="#">User 3</a></li>
+          
+          </ul>
+           </div>
+        </div>
+        <div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+         <ul  class="nav nav-tabs chat-tabs ">
+          <li role="presentation" class="active " href="#home"><a href="#">Channel</a></li>
+          </ul>
+          <div  class="panel panel-default">
+   
+            <div id="home" class=" panel-bodycontent body-content " >        
+                <ol reversed class="list-group chat-box  pre-scrollable" data-bind="foreach: messages">
+                  <li class="list-group-item chat-item"><span data-bind="text: msg"></span></li>          
+                </ol>
+            </div>
+        </div> 
+        </div>
+       
+               
+               
+         </div>
+        </div>
+         <nav class=" footer navbar chat-footer col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 navbar-fixed-bottom">
+            <div class="input-group">
+              <input type="text" data-bind="value: newMessage" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2" data-bind="click: sendMessage" >Send</span>
+            </div>
+           </nav>  
+        
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type='text/javascript' src='index.js'></script>
+  </body>
+</html>
